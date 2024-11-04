@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Deportes</title>
+</head>
+<body>
+    <h1>Tabla de Deportes</h1>
+    <div id="tablaDeportes"></div>
+
+    <script src="path/to/handlebars.js"></script>
+    <script src="data.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const source = document.getElementById("tablaDeportes-template").innerHTML;
+            const template = Handlebars.compile(source);
+            const html = template({ deportes });
+            document.getElementById("tablaDeportes").innerHTML = html;
+        });
+    </script>
+    <script src="table-template.hbs"></script> 
+</body>
+</html>

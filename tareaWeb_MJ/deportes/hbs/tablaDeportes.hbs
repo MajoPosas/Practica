@@ -1,0 +1,20 @@
+<table>
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Descripción</th>
+            <th>Que se requiere para practicarlo?</th>
+            <th>Ranking de 1 a 5</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each deporte}}
+        <tr>
+            <td>{{nombre}}</td>
+            <td>{{descripcion}}</td>
+            <td>{{requirements}}</td>
+            <td>{{rank}}</td>
+        </tr>
+        {{#each}}
+    </tbody>
+</table>

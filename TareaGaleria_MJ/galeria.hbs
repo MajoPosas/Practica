@@ -1,0 +1,8 @@
+<div id="galeria">
+    {{#each imagenes}}
+    <div class="imagen">
+        <img src="{{this.url}}" alt="{{this.descripcion}}">
+        <p>{{this.descripcion}}</p>
+    </div>
+    {{/each}}
+</div>

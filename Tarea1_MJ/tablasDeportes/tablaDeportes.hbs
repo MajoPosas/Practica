@@ -1,0 +1,22 @@
+<script id="tablaDeportes-template" type="text/x-handlebars-template">
+<table>
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Descripción</th>
+            <th>Que se requiere para practicarlo?</th>
+            <th>Ranking de 1 a 5</th>
+        </tr>
+    </thead>
+    <tbody>
+       {{#each deportes}}
+        <tr>
+            <td>{{this.nombre}}</td>
+            <td>{{this.descripcion}}</td>
+            <td>{{this.requirements}}</td>
+            <td>{{this.rank}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+</script>
